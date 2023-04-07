@@ -1,0 +1,128 @@
+.join__container {
+  margin: 0 auto;
+  width: 100%;
+  height: 1024px;
+  background-image: url('../image/bg-login.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.layer {
+  background-color: rgba(7, 21, 62, 0.6);
+  height: 100%;
+}
+
+.join__header {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 3fr;
+  width: 100%;
+  height: 150px;
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0.2);
+}
+
+.join__header-signin,
+.join__header-signup {
+  width: 25%;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-family: SpoqaHanSans, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.25px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.join__header-signin,
+.join__header-signup p {
+  text-align: center;
+}
+
+.join__header-signin {
+  margin-left: auto;
+}
+
+.join__header-signup {
+  margin-right: auto;
+  border-bottom: solid 3px #2d55c9;
+}
+
+.social__container {
+  width: 100%;
+  height: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-join--line,
+.social-join--facebook,
+.social-join--email {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 65px;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 8px 0 rgba(81, 81, 81, 0.36);
+}
+
+.social-join--line {
+  margin-top: 30px;
+  background-color: #4eb328;
+}
+.social-join--line:hover {
+  background-color: #5da342;
+}
+
+.social-join--facebook {
+  margin-top: 30px;
+  background-color: #365cb9;
+}
+.social-join--facebook:hover {
+  background-color: #294fac;
+}
+
+.social-join--email {
+  background-color: #cbdb24;
+}
+.social-join--email:hover {
+  background-color: #becd18;
+}
+
+.social__container button p {
+  padding-left: 15px;
+}
+
+.social-join--email,
+.social-join--line,
+.social-join--facebook {
+  font-family: SpoqaHanSans, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social-join--email {
+  color: #07153e;
+}
+
+.social-join--line,
+.social-join--facebook {
+  color: #fff;
+}
+
+.social-join--email span,
+.social-join--line span,
+.social-join--facebook span {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,40 @@
+extends layouts/basic
+
+block content
+    .login__container
+        .layer
+            .login__header
+                include partials/logo
+                .login__header-signin
+                    p 로그인
+                .login__header-signup
+                    p 회원가입
+
+            .form-container
+                form(action="/auth/login" method="post")
+                    p 아이디
+                    br
+                    input.user__box(type="text", name="id", required=true)
+
+                    p 비밀번호
+                    br
+                    input.user__box(type="password", name="password", required=true)
+
+                    // input.btn__submit(type="submit", value="로그인하기")
+                    button.btn__submit(type="submit")   
+                        span
+                            i.fas.fa-envelope
+                            p 로그인하기
+
+                p.sns SNS 로그인하기
+
+                .social-login
+                    form(action="/auth/line" method="get")
+                        button.social-login--line(type="submit")
+                            span
+                                i.fab.fa-line
+                                p Line으로 로그인하기
+                        button.social-login--facebook
+                            span
+                                i.fab.fa-facebook
+                                p Facebook으로 로그인하기

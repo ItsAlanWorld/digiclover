@@ -1,0 +1,35 @@
+extends layouts/basic
+
+block content
+    .join__container
+        .layer
+            .join__header
+                include partials/logo
+                .join__header-signin
+                    p 로그인
+                .join__header-signup
+                    p 회원가입
+            
+            .form__container
+                form(action="/auth/join" method="post")
+                    p 이메일
+                    br
+                    input.input__box(type="email", name="email", required=true)
+
+                    p 아이디
+                    br
+                    input.input__box(type="text", name="id", required=true)
+
+                    p 휴대폰 번호
+                    br
+                    input.input__box(type="tel", name="tel", required=true)
+
+                    p 비밀번호
+                    br
+                    input.input__box(type="password", name="password", required=true)
+
+                    // input.btn__submit(type="submit", value="회원가입")
+                    button.btn__submit(type="submit")   
+                        span
+                            i.fas.fa-envelope
+                            p 회원가입하기

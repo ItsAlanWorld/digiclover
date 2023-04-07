@@ -1,0 +1,44 @@
+extends layouts/basic
+
+block content
+    main.main
+        aside.main__aside
+            .main__logo
+                include partials/logo
+            .aside__menu
+                .aside__menu-manage 
+                    .aside__menu-manage-text 문서화 관리
+                    i.fas.fa-chevron-up
+                .aside__menu-locker
+                    .aside__menu-locker-text 문서 보관함
+                    i.fas.fa-chevron-up
+            form(action="/upload/docu" method="post" enctype="multipart/form-data")
+                .filebox
+                    label(for="file") 문서 업로드
+                    input(name="docu" type="file" accept="application/pdf" id="file")
+                    input(type='submit' value="제출")
+        section.main__content
+            .main__header
+                .header-txt 문서화 관리
+                .header-search
+                    form(method="get")
+                        input(type="text", placeholder="계약서를 검색하세요.", name="keyword")
+                .header__user
+                    .header__user-container
+                        p.header__user-name Higgs님
+                        .header__user-logout 로그아웃
+                    .header__user-img
+            .main__tabmenu
+                button.tabmenu__waiting
+                    p.tabmenu__waiting-txt 인증 대기
+                    .tabmenu__waiting-num 0
+                button.tabmenu__complete
+                    p.tabmenu__complete-txt 문서화 완료
+                    .tabmenu__complete-num 0
+                button.tabmenu__issued
+                    p.tabmenu__issued-txt 인증서 발급
+                    .tabmenu__issued-num 0
+            .main__body
+            
+
+            

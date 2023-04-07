@@ -1,0 +1,37 @@
+{
+  "name": "line-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "HiggsClover",
+  "license": "MIT",
+  "devDependencies": {
+    "@unibeautify/beautifier-eslint": "^0.6.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.5",
+    "nodemon": "^2.0.6",
+    "unibeautify": "^0.17.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "passport": "^0.4.1",
+    "passport-line": "0.0.4",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.0",
+    "request": "^2.88.2",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  }
+}
